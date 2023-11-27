@@ -38,6 +38,7 @@ function App() {
                         <h1>{note.title}</h1>
                         <hr />
                         <p>{note.content}</p>
+                        <button>Delete</button>
                     </div>
                 ))}
             </div>
