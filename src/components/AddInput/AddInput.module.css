@@ -1,3 +1,81 @@
 .inputDiv {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    min-height: 75%;
+    min-width: 75%;
+    border-radius: 1rem;
+}
+
+.topText {
+    margin: 1rem;
+}
+
+.inputDiv form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputDiv input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 0.25rem 0.75rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    outline: 0;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.inputDiv input::placeholder {
+    text-align: center;
+}
+
+.inputDiv textarea {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    color: #fff;
+    resize: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputDiv textarea::placeholder {
+    text-align: center;
+    font-weight: bold;
+}
+
+.inputDiv button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.inputDiv button:hover {
+    background-color: #fff;
+    color: green;
+}
+
+.inputDiv input:focus {
+    background-color: #fff;
+    color: #000;
 }

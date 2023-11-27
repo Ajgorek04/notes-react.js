@@ -6,18 +6,23 @@ import { AddInput } from "./components/AddInput/AddInput";
 function App() {
     const [isAddNoteShown, setIsAddNoteShown] = useState(false);
 
-    function handleAddNoteClick() {
-        alert("CLick");
+    function handleViewAddNoteClick() {
         setIsAddNoteShown(true);
+    }
+
+    function handleAddNoteClick(e) {
+        e.preventDefault();
+        alert("wiem");
+        setIsAddNoteShown(false);
     }
 
     return (
         <div className="container">
             <Header
-                addNote={handleAddNoteClick}
+                showNote={handleViewAddNoteClick}
                 showAddNote={setIsAddNoteShown}
             />
-            {isAddNoteShown && <AddInput />}
+            {isAddNoteShown && <AddInput addNote={handleAddNoteClick} />}
         </div>
     );
 }
