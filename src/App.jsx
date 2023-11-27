@@ -10,10 +10,8 @@ function App() {
         setIsAddNoteShown(true);
     }
 
-    function handleAddNoteClick(e) {
-        e.preventDefault();
-        alert("wiem");
-        setIsAddNoteShown(false);
+    function handleAddNoteClick(noteData) {
+        alert(noteData.title);
     }
 
     return (
