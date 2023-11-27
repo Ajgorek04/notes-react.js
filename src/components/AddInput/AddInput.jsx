@@ -17,6 +17,7 @@ export function AddInput({ addNote }) {
         e.preventDefault();
         addNote({ title, textContent });
         setTitle("");
+        setTextContent("");
     }
 
     return (

@@ -11,26 +11,6 @@ function App() {
             title: "Title 1",
             content: "Cos tam notatki jakies lorem ipsum nie dziala tuta",
         },
-        {
-            title: "Title 2",
-            content:
-                "Cfsaos tam no satatgas ki jakiefass lasf gasgorem asgas gipsumfas nie dzialffa tuta",
-        },
-        {
-            title: "Title 2",
-            content:
-                "Cfsaos tam no satatgas ki jakiefass lasf gasgorem asgas gipsumfas nie dzialffa tuta",
-        },
-        {
-            title: "Title 2",
-            content:
-                "Cfsaos tam no satatgas ki jakiefass lasf gasgorem asgas gipsumfas nie dzialffa tuta",
-        },
-        {
-            title: "Title 2",
-            content:
-                "Cfsaos tam no satatgas ki jakiefass lasf gasgorem asgas gipsumfas nie dzialffa tuta",
-        },
     ]);
 
     function handleViewAddNoteClick() {
@@ -38,7 +18,11 @@ function App() {
     }
 
     function handleAddNoteClick(noteData) {
-        alert(noteData.title);
+        setNotes((prevNotes) => [
+            ...prevNotes,
+            { title: noteData.title, content: noteData.textContent },
+        ]);
+        setIsAddNoteShown(false);
     }
 
     return (
