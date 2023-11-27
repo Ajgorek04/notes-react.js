@@ -38,7 +38,7 @@ function App() {
                         <h1>{note.title}</h1>
                         <hr />
                         <p>{note.content}</p>
-                        <button>Delete</button>
+                        <button className="delBtn">Delete</button>
                     </div>
                 ))}
             </div>
