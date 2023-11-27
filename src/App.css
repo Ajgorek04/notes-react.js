@@ -33,4 +33,13 @@
     border: 1px solid #fff;
     color: #fff;
     padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: auto;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delBtn:hover {
+    background-color: #fff;
+    color: #000;
 }
