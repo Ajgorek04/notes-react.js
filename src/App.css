@@ -21,7 +21,8 @@
     height: 300px;
     padding: 1rem;
     background-color: #111;
-    overflow: hidden;
+    border-radius: 0.75rem;
+    overflow: auto;
 }
 
 .noteDivs h1 {
