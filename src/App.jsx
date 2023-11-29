@@ -6,12 +6,7 @@ import { AddInput } from "./components/AddInput/AddInput";
 function App() {
     const [isAddNoteShown, setIsAddNoteShown] = useState(false);
 
-    const [notes, setNotes] = useState([
-        {
-            title: "Title 1",
-            content: "Cos tam notatki jakies lorem ipsum nie dziala tuta",
-        },
-    ]);
+    const [notes, setNotes] = useState([]);
 
     function handleViewAddNoteClick() {
         setIsAddNoteShown(true);
