@@ -25,6 +25,14 @@ function App() {
         setIsAddNoteShown(false);
     }
 
+    function handleDeleteButton(index) {
+        setNotes((prevNotes) => {
+            const newNotes = [...prevNotes];
+            newNotes.splice(index, 1);
+            return newNotes;
+        });
+    }
+
     return (
         <div className="container">
             <Header
@@ -38,7 +46,12 @@ function App() {
                         <h1>{note.title}</h1>
                         <hr />
                         <p>{note.content}</p>
-                        <button className="delBtn">Delete</button>
+                        <button
+                            onClick={() => handleDeleteButton(index)}
+                            className="delBtn"
+                        >
+                            Delete
+                        </button>
                     </div>
                 ))}
             </div>
